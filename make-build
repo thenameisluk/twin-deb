@@ -1,0 +1,22 @@
+#!/bin/bash
+VERSION=0.9.0
+
+sudo apt install libx11-dev libxft-dev libncurses-dev zlib1g-dev libgpm-dev -y
+
+#control file
+mkdir -p deb/DEBIAN
+cp debian/* deb/DEBIAN/
+
+#building
+./configure
+make -j$(nproc)
+
+DESTDIR=$(pwd)/deb make install
+
+chmod +x deb/DEBIAN/post*
+
+
+#build deb
+dpkg-deb --build deb
+
+mv deb.deb twin-${VERSION}-1_arm64.deb -v

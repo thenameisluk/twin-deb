@@ -1,3 +1,11 @@
+# fork made to package the project for debian
+
+in order to build .deb package just run ./make-build script
+
+if you want a diffent arch build, modify ./debian/control file , 'm too lazy to include auto detection for now :3
+
+_Note. it might be worth noting there are some weird warnings but these don't seam to cause any issues : "warning: remember to run 'libtool --finish /usr/local/lib/twin'"_
+
 --------------------------------------------------------------
 Twin - a Textmode WINdow environment
 --------------------------------------------------------------

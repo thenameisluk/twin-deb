@@ -1,0 +1,6 @@
+Package: twin
+Version: 0.9.0
+Maintainer: luk<luk@iaml.uk>
+Architecture: arm64
+Description: Text mode window environment. A \"retro\" program for embedded or remote systems, that doubles as X11 terminal and text-mode equivalent of VNC server
+Depends: libx11-6, libxft2, libncurses6, zlib1g, libgpm2

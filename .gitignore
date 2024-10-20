@@ -35,3 +35,5 @@ Makefile
 /scripts/include
 /scripts/txt
 /test/twtest
+deb/
+*.deb
